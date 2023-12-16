@@ -1,0 +1,107 @@
+miles =  float(input("Enter your input in miles: "))
+constant = 1.609
+kilometers = miles * constant
+print(f"{miles}miles are equal to {kilometers}kilometres")
+
+input1 = input("Enter a number.")
+input2 = input("Enter another number.")
+print(f"Original values ={input1},{input2}")
+temp = input1
+input1 = input2
+input2 = temp
+print(f"After swapping ={input1},{input2}")
+
+temp_in_celcius = float(input("Enter your temperature in celcius: "))
+temp_in_fahrenheit = ( 9/5 * temp_in_celcius) + 32
+print(f"{temp_in_celcius}celcius are equal to {temp_in_fahrenheit}fahrenheit.")
+
+
+number_of_hours = float(input("Enter your number of hours: "))
+number_of_days = number_of_hours  / 24
+number_of_weeks = number_of_hours / 168
+print(f"{number_of_hours}hours are equal to {number_of_hours}hours {number_of_days}days and {number_of_weeks}weeks.")
+
+
+# check if second number is cube of first one
+input1 = float(input("Enter your input."))
+input2 = float(input("Enter your input."))
+if input2 == input1 ** 3:
+    print(f"{input2} is equal to cube of {input1}. ")
+else:
+    print(f"not cube.")
+
+
+# checking average of three subjects
+input1= float(input("Enter marks of first subject: "))
+input2= float(input("Enter marks of second subject: "))
+input3= float(input("Enter marks of third subject: "))
+if (input1+input2+input3) / 3 >= 75:
+    print("You are above standard.Congratulations.")
+else:
+    print("Failed")
+
+
+# Checking of bonus salary.
+input_salary = float(input("Enter your salary here: "))
+input_scale = float(input("Enter your scale here: "))
+if input_scale > 16:
+    bonus_salary = input_salary + ((40/100)*input_salary)
+    print(f"{input_salary} is your salary.")
+    print(f"{bonus_salary} is your total salary after bonus.")
+else:
+    bonus_salary2 = input_salary + ((20/100)*input_salary)
+    print(f"{input_salary} is your salary.")
+    print(f"{bonus_salary2} is your total salary after bonus.")
+
+ # Grading system
+input_score = float(input("Enter the marks of your test. "))
+if input_score >=80:
+    print("A")
+elif input_score >=70 and input_score<= 79:
+    print("B")
+elif input_score >= 60 and input_score <= 69:
+    print("C")
+elif input_score >= 50 and input_score <= 59:
+    print("D")
+else:
+    print("F")
+
+# 2nd lab task 1
+i = 1
+while i<6:
+    print("Pakistan")
+    i = i +1
+
+
+
+num1=float(input("Enter first number."))
+num2=float(input("Enter second number."))
+print(f"{num2}=first number,{num1}=second number")
+
+
+
+#cgpa calculator
+cgpa = 0
+sum = 0
+for i in range(2):
+    subject = input("Write name of the subject.")
+    gpa = float(input("Write the gpa gained in the subject."))
+    credithours = float(input("Enter the credit hours of the subject."))
+    cgpa += (gpa*credithours)
+    sum += credithours
+cgpa1 = cgpa/sum
+print(f"Your total cgpa is {cgpa1}.")
+
+
+
+#electricity bill calculator.
+unit_consumed = float(input("Enter total number of unit consumed."))
+if unit_consumed<=100:
+    bill = 10*unit_consumed
+elif unit_consumed<=200:
+    bill = 20*unit_consumed
+elif unit_consumed<300:
+    bill = 30*unit_consumed
+else:
+    bill = 40*unit_consumed
+print(f"Your total bill is Rs:{bill}")
